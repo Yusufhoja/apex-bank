@@ -148,7 +148,7 @@ useEffect(() => {
                   <img style={{width:"20px", height:"20px"}} src="../kema.svg" alt="" />
                 </div>
               </div>
-              <p className='card_second_p'>Lorem ipsum dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
+              <p className='card_second_p'>Lorem ipsume dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr/>
               <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>Подробнее</button></div>
               </div>

@@ -48,7 +48,7 @@ justify-content: space-around;
   background-color: #F7F7F7;
 }
 .section1{
-  background-image: url('../public/ocean.jpg');
+  background-image: url('/public/ocean.jpg');
  
   /* filter: brightness(-1.8); */
   width: 1340px;
