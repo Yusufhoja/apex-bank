@@ -1,0 +1,944 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-left{
+  width: 152px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
+  position: fixed;
+  margin-top: 22px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1340px;
+  height: 145px;
+}
+.nav-right button{
+height: 60px;
+max-width: 208px;
+padding-top: 18px;
+padding-right: 20px;
+padding-bottom: 18px;
+padding-left: 20px;
+gap: 10px;
+angle: 0 deg;
+opacity: 1;
+border-radius: 20px;
+background-color: #E5E8EE;
+border: none;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.nav-right{
+  width: 686px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section{
+  display: flex;
+  background-color: #F7F7F7;
+}
+.section1{
+  background-image: url('../public/ocean.jpg');
+ 
+  /* filter: brightness(-1.8); */
+  width: 1340px;
+  height: 500px;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 20px;
+}
+.section1-div{
+  color: white;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 45px;
+  margin-bottom: 45px;
+}
+.section1-div button{
+  width: 206px;
+height: 56px;
+background: none;
+border: 1px solid white;
+color: white;
+padding-top: 16px;
+padding-right: 32px;
+padding-bottom: 16px;
+padding-left: 32px;
+gap: 8px;
+angle: 0 deg;
+opacity: 1;
+border-radius: 56px;
+border-width: 1px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.section1-div h1{
+  font-size: 34px;
+  
+}
+.card{
+  width: 300px;
+  height: 490px;
+  background-color: white;
+  border-radius: 20px;
+}
+.card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+.section2-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1340px;
+  margin-top: 40px;
+}
+.section2-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1340px;
+  margin-top: 25px;
+}
+.card h3{
+  color: #2C3438;
+  font-family: Manrope;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 140%;
+letter-spacing: 0%;
+
+}
+.card_first_p{
+  color: #095880;
+}
+.card_second_p{
+  color: #919699;
+}
+.card span{
+  color: #919699;
+}
+.card-bottom{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 270px;
+}
+.p_and_button button{
+  border: none;
+  color: white;
+  height: 45px;
+  width: 100px;
+  background-color: #2C3438;
+  border-radius: 56px;
+}
+.p_and_button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_third_p{
+  color: #919699;
+}
+.section2{
+  width: 1340px;
+}
+.section2-top h2{
+  color: #002E4A;
+  font-size: 24px;
+}
+.section2-top-left{
+  width: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section2-top-left p{
+  font-size: 18px;
+  color: #2C3438;
+}
+.section3-left div{
+  width: 650px;
+  height: 450px;
+  background-color: #E5E8EE;
+  border-radius: 20px;
+}
+.section3-left{
+  height: 508px;
+  width: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 508px;
+  width: 1340px;
+}
+.section3-left h2{
+  color: #002E4A;
+  font-size: 22px;
+}
+.section3-right-maindiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 450px;
+  margin-top: 23px;
+}
+.section3-right-rightdivs div{
+  width: 420px;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #E5E8EE;
+  border-radius: 20px;
+}
+.section3-right-rightdivs p{
+  width: 260px;
+  color: #919699;
+  font-size: 18px;
+}
+.section3-right-rightdivs b{
+  color: #095880;
+  font-size: 32px;
+  font-family: Manrope;
+font-weight: 800;
+font-style: ExtraBold;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+}
+.section3-right-rightdivs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 450px;
+  width: 450px;
+ 
+}
+.section3-right{
+  height: 508px;
+  width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.section3-rihgt h2{
+  font-size: 22px;
+  color: #2C3438 ;
+}
+.section3-right-1div{
+  height: 223px;
+  width: 230px;
+  background-color: #2C3438;
+  color: white;
+  padding: 24px;
+}
+.section3-right-2div{
+  background-color: #2C3438;
+  color: white;
+  height: 170px;
+  width: 230px;
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 24px;
+}
+.section4-main{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.section4-left img, .section4-right img{
+  width: 660px;
+}
+.section4-right p{
+  width: 664px;
+}
+.section4{
+  margin-top: 70px;
+}
+.section4-1p{
+  color: #095880;
+  font-weight: bold;
+  font-size: 14px;
+}
+.section4-2p{
+  color: #2C3438;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 9px;
+}
+.section4-3p{
+  color: #919699;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.section4-left{
+  width: 670px;
+}
+.section4-right{
+  background-color: white;
+}
+.ddiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ddiv button{
+  height: 56px;
+  border: 1px solid #919699;
+  border-radius: 56px;
+  background: none;
+  width: 110px;
+}
+.section4-right p, .section4-right div{
+  padding: 20px;
+}
+
+/* Navdagi button hoverlari */
+.nav-right button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-right button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(9, 88, 128, 0.3); /* yengil soyali effekt */
+  background-color: #d4d9e3; /* hoverda rang o‘zgarishi */
+  cursor: pointer;
+}
+
+.nav-right button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #095880;
+  transition: 0.4s ease;
+}
+
+.nav-right button:hover::after {
+  width: 100%;
+}
+
+
+body.dark .nav-right button:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.15);
+}
+
+body.dark .nav-right button::after {
+  background-color: #fff;
+}
+.nav-right button:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: none;
+}
+
+.main-left div {
+  transition: all 0.25s ease;
+}
+
+.main-left div:hover {
+  background-color: #095880;
+  transform: scale(1.05); /* OLDIN: 1.1 → YANGI: 1.05 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.main-left div:hover img {
+  filter: brightness(180%) contrast(105%);
+  transform: rotate(3deg); /* OLDIN 5deg, endi yumshoqroq */
+  transition: all 0.25s ease;
+}
+body.dark .main-left div:hover {
+  background-color: #1e90ff;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.15);
+}
+.p{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+}
+.p:hover{
+  color: #095880;
+  transform: scale(1.03);
+  transition: 0.2s linear;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #E5E8EE;
+  border-radius: 20px;
+  width: 1340px;
+  margin-top: 60px;
+  padding: 42px;
+  margin-bottom: 36px;
+}
+.footer-top{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-top-right{
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-top-right div{
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-middle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+.footer-m-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+}
+.footer-m-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+}
+.footer-m-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+}
+.footer-m-4{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+}
+footer a{
+  font-family: Manrope;
+font-weight: 450;
+font-style: Medium;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #919699;
+text-decoration: none;
+margin-top: 4px;
+}
+footer p{
+  font-family: Manrope;
+font-weight: 450;
+font-style: Medium;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #919699;
+margin-top: 20px;
+}
+.main-left img{
+  width: 28px;
+}
+.main-left div{
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.main{
+  position: relative;
+  left: 150px;
+}
+
+
+
+
+
+.img{
+  position: absolute;
+  border-radius: 5px;
+  left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.light{
+  background-color: white;
+  color: black;
+  color: white;
+}
+.dark{
+  background-color: black;
+}
+
+/* umumiy stil */
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark nav,
+body.dark .section3-right-rightdivs div,
+body.dark .section3-right-1div,
+body.dark .section3-right-2div,
+body.dark .footer-top-right div,
+body.dark footer {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark .card_second_p,
+body.dark .card_third_p,
+body.dark footer p,
+body.dark footer a {
+  color: #cccccc;
+}
+
+body.dark .main-left, 
+body.dark .main-section,
+body.daark .section4-right,
+body.dark .section4-1p{
+  background-color: #1f1f1f;
+}
+body.dark .card{
+  border: 1px solid white;
+}
+
+body.dark nav button{
+  background-color: #1f1f1f;
+  border: 1px solid white;
+  color: white  ;
+}
+
+.section3-right-leftdivs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 450px;
+}
+
+
+
+
+
+
+
+/* ====== DARK MODE (MODERN + GLASS EFFECT) ====== */
+
+body.dark {
+  background: linear-gradient(160deg, #0f2027, #203a43, #2c5364);
+  color: #eaeaea;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Scrollbar for dark mode */
+body.dark::-webkit-scrollbar {
+  width: 8px;
+}
+body.dark::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+/* ====== Navigation Buttons ====== */
+body.dark nav button {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #eaeaea;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+body.dark nav button:hover {
+  background-color: #1c2c3c;
+  color: #4DAEFF;
+  box-shadow: 0 0 15px #4DAEFF88;
+}
+
+/* ====== Sidebar (main-left) ====== */
+body.dark .main-left {
+  background-color: #1f1f1f;
+  border-right: 1px solid #333;
+}
+
+body.dark .main-left div {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+body.dark .main-left div:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.08);
+  box-shadow: 0 0 8px #ffffff33;
+}
+
+/* ====== Cards ====== */
+body.dark .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Card text colors */
+body.dark .card_second_p,
+body.dark .card_third_p {
+  color: #cccccc;
+}
+
+/* ====== Section Backgrounds ====== */
+body.dark .section3-right-rightdivs div,
+body.dark .section3-right-1div,
+body.dark .section3-right-2div,
+body.dark .footer-top-right div,
+body.dark footer,
+body.dark .section4-right {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+/* ====== Footer Text & Links ====== */
+body.dark footer p,
+body.dark footer a {
+  color: #ccc;
+}
+
+/* ====== Highlighted P Tags ====== */
+body.dark .section4-1p {
+  color: #4DAEFF;
+}
+
+
+
+/* 1. Matnlar uchun (eski #2C3438 o'rniga) */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark .card h3,
+body.dark .section2-top h2 {
+  color: #6C8CA6; /* Oqish ko‘k */
+}
+body.dark .section4-3p,
+body.dark .nav-right button p{
+  color: gainsboro;
+}
+body.dark .section3-right-1div p,
+body.dark .section3-right-2div p,
+body.dark .section3-right-rightdivs p{
+  color: #919699;
+}
+body.dark .section1 p,
+body.dark .section1 h1{
+  color: white;
+}
+
+/* 2. Maxsus elementlar (agar alohida joyda kerak bo‘lsa) */
+body.dark .card h3,
+body.dark .section3-left h2,
+body.dark .section2-top-left p {
+  color: #6C8CA6; /* Eng aniq, pastel ohang */
+}
+body.dark footer {
+  background-color: #1f1f1f !important;
+}
+
+
+/* Nav button hover */
+.nav-right button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-right button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(9, 88, 128, 0.3);
+  background-color: #d4d9e3;
+  cursor: pointer;
+  color: #095880;
+}
+
+.nav-right button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #095880;
+  transition: 0.4s ease;
+}
+
+.nav-right button:hover::after {
+  width: 100%;
+}
+
+.nav-right button:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: none;
+}
+
+/* Sidebar (main-left) div hover */
+.main-left div {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.main-left div:hover {
+  background-color: #095880;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(9, 88, 128, 0.5);
+}
+
+.main-left div:hover img {
+  filter: brightness(180%) contrast(105%);
+  transform: rotate(3deg);
+  transition: all 0.25s ease;
+}
+
+/* Card hover */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+/* Buttons inside cards */
+.p_and_button button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  background-color: #2C3438;
+  color: white;
+  border-radius: 56px;
+  border: none;
+}
+
+.p_and_button button:hover {
+  background-color: #095880;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(9, 88, 128, 0.5);
+}
+
+.p_and_button button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+/* Footer links hover */
+footer a {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  cursor: pointer;
+  color: #919699;
+}
+
+footer a:hover {
+  color: #095880;
+  text-decoration: underline;
+}
+
+/* Section4 (.ddiv) buttons */
+.ddiv button {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #919699;
+  border-radius: 56px;
+  width: 110px;
+  height: 56px;
+  color: #919699;
+}
+
+.ddiv button:hover {
+  background-color: #095880;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(9, 88, 128, 0.5);
+}
+
+.ddiv button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+.ddiv button:hover{
+  color: white !important;
+}
+.ddiv b{
+  font-size: 20px;
+}
+
+/* Dark mode hover variants */
+body.dark .nav-right button:hover {
+  background-color: #1c2c3c;
+  color: #4DAEFF;
+  box-shadow: 0 0 15px #4DAEFF88;
+}
+
+body.dark .main-left div:hover {
+  background-color: #1e90ff;
+  box-shadow: 0 0 10px #4DAEFFaa;
+}
+
+body.dark .card:hover {
+  box-shadow: 0 12px 30px rgba(77, 174, 255, 0.5);
+  transform: translateY(-8px) scale(1.03);
+}
+
+body.dark .p_and_button button:hover {
+  background-color: #4DAEFF;
+  box-shadow: 0 6px 15px #4DAEFFaa;
+}
+
+body.dark footer a:hover {
+  color: #4DAEFF;
+}
+
+body.dark .ddiv button:hover {
+  background-color: #4DAEFF;
+  color: white;
+  box-shadow: 0 6px 15px #4DAEFFaa;
+}
+.card {
+  width: 300px;
+  height: 490px;
+  background-color: white;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animatsiya qo‘shildi */
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05); /* 5% kattalashadi */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* biroz soyani qo‘shamiz */
+}
+.section1-div button {
+  width: 206px;
+  height: 56px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Agar hoverda soyani ham qo‘shishni xohlasangiz */
+}
+
+.section1-div button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.6);
+}
+
+.card{
+  position: relative;
+}
+
+.perdiv{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  left: 245px;
+  top: 25px;
+}
+.footer-top-right div {
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+
+.footer-top-right div:hover {
+  transform: scale(1.5);
+  box-shadow: 2px 9px 15px rgba(9, 88, 128, 0.3);
+}
+
