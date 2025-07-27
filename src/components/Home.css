@@ -399,8 +399,12 @@ body.dark .main-left div:hover {
   color: #095880;
   transform: scale(1.03);
   transition: 0.2s linear;
+  cursor: pointer;
 }
-
+.btn:hover{
+  transform: scale(1.1);
+  transition: 0.5s linear;
+}
 footer{
   display: flex;
   flex-direction: column;
@@ -907,12 +911,13 @@ body.dark .ddiv button:hover {
   justify-content: center;
   gap: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
   /* Agar hoverda soyani ham qo‘shishni xohlasangiz */
 }
 
 .section1-div button:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
+  transition: 0.2s linear !important;
   box-shadow: 0 8px 15px rgba(255, 255, 255, 0.6);
 }
 
@@ -942,3 +947,67 @@ body.dark .ddiv button:hover {
   box-shadow: 2px 9px 15px rgba(9, 88, 128, 0.3);
 }
 
+
+
+/* 1300px dan 1550px gacha ekranlar uchun */
+@media (min-width: 1200px) and (max-width: 1550px) {
+  /* Umumiy bo‘limlar uchun */
+  .main-left {
+    width: 170px;  /* Sidebarni kengaytirish */
+    height: 600px;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: row;  /* Keng ekranlarda elementlarni yonma-yon joylashtirish */
+    background-color: #F7F7F7;
+  }
+
+  .nav-right {
+    width: 70%;  /* Noutbuklar uchun kenglikni biroz qisqartirish */
+  }
+
+  .section1 {
+    background-image: url('/public/ocean.jpg');
+    width: 100%;  /* Section kengligini ekran o‘lchamiga moslashtirish */
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Section1-divda o‘zgarish */
+  .section1-div {
+    margin-left: 60px;
+    margin-bottom: 45px;
+  }
+
+  /* Card uchun */
+  .card {
+    width: 320px;  /* Keng ekranlarda kartalar kengligini oshirish */
+    height: 490px;
+  }
+
+  /* Footer uchun o‘zgarishlar */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-top-right {
+    width: 250px;  /* Footer elementlarini kengaytirish */
+  }
+  
+  .section2-top {
+    width: 1300px;
+  }
+
+  /* Section2 uchun o‘zgarish */
+  .section2 {
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 22px;
+  }
+}

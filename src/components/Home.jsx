@@ -82,7 +82,7 @@ useEffect(() => {
             <img style={{width:"25px"}} src={dark ? '../eyewhite.png' : '../eye.svg'} alt="" /> |  RU
           </button>
 
-          <button>
+          <button style={{padding:" 8px 12px"}} >
             <img style={{width:"22px"}} src={dark ? '../call.png' : '../call.svg'} alt="" /> <p>1188</p> | <img style={{width:"22px"}} src={dark ? '../send.png' : '../send.svg'} alt="" /> Поддержка
           </button>
         </div>
@@ -95,7 +95,7 @@ useEffect(() => {
             <p data-aos="fade-down">Страхование ответственности</p>
             <h1 data-aos="zoom-in">Оформите ОСГО ВТС онлайн</h1>
             <p data-aos="fade-up">И получите ссылку на E-polis по смс</p>
-            <button data-aos="fade-right" style={{fontSize:"18px"}}>Подробнее <img src="../right.svg" alt="" /></button>
+            <button className='btn' data-aos="fade-right" style={{fontSize:"18px"}}>Подробнее <img src="../right.svg" alt="" /></button>
           </div>
             
         </div>
