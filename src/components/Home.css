@@ -661,7 +661,7 @@ body.dark .card {
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
+  transition: 0.1s linear;
 }
 
 /* Card text colors */
@@ -785,7 +785,7 @@ body.dark footer {
 
 /* Card hover */
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
   cursor: pointer;
 }
 
@@ -869,6 +869,7 @@ body.dark .main-left div:hover {
 body.dark .card:hover {
   box-shadow: 0 12px 30px rgba(77, 174, 255, 0.5);
   transform: translateY(-8px) scale(1.03);
+  transition: 0.2s linear;
 }
 
 body.dark .p_and_button button:hover {
@@ -890,7 +891,7 @@ body.dark .ddiv button:hover {
   height: 490px;
   background-color: white;
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animatsiya qo‘shildi */
+  transition: transform 0.2s linear, box-shadow 0.2s linear; /* animatsiya qo‘shildi */
   cursor: pointer;
 }
 
