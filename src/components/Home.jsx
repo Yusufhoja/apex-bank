@@ -47,8 +47,8 @@ useEffect(() => {
   return (
     <div className='main-section'>
     <div className="main-left">
-       <div><button style={{border:"none", background:"none" }} onClick={() => setDark(!dark)}> <img src={ dark ? '../mood2.svg' : '../mode.svg'} alt="" /></button></div>
-       <Link to={'/'}><div style={{backgroundColor:"#E5E8EE"}}> <img src="../home.svg" alt="" /></div></Link>
+       <div><button style={{border:"none", background:"none"}} onClick={() => setDark(!dark)}> <img src={ dark ? '../mood2.svg' : '../mode.svg'} alt="" /></button></div>
+       <Link to={'/'}><div style={{backgroundColor:"#E5E8EE", marginTop:"30px "}}> <img src="../home.svg" alt="" /></div></Link>
        <Link to={'/user'}><div > <img src="../user.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
        <Link to={'/work'}><div > <img src="../chemodan.svg" alt="" /></div></Link>
