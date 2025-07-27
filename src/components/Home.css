@@ -37,6 +37,9 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 }
+.nav-right select{
+  width: 110px;
+}
 .nav-right{
   width: 686px;
   display: flex;
@@ -682,7 +685,10 @@ body.dark .section4-right {
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
 }
-
+body.dark .nav-right select,
+body.dark .nav-right option{
+  background-color: rgba(255, 255, 255, 0.05);
+}
 /* ====== Footer Text & Links ====== */
 body.dark footer p,
 body.dark footer a {
@@ -706,7 +712,8 @@ body.dark .section2-top h2 {
   color: #6C8CA6; /* Oqish ko‘k */
 }
 body.dark .section4-3p,
-body.dark .nav-right button p{
+body.dark .nav-right button p,
+body.dark .nav-right select{
   color: gainsboro;
 }
 body.dark .section3-right-1div p,
@@ -760,7 +767,7 @@ body.dark footer {
   width: 100%;
 }
 
-.nav-right button:active .nav-right select:ac {
+.nav-right button:active .nav-right select:active {
   transform: translateY(0px) scale(0.98);
   box-shadow: none;
 }

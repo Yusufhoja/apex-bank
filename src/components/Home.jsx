@@ -4,12 +4,14 @@ import { Link, Links } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 import { Select, Option } from "@material-tailwind/react";
 export default function Home() {
     const[dark, setDark]=useState(false)
     const [isOn, setIsOn] = useState(false)
 
     const toggleSwitch = () => setIsOn(!isOn)
+     const { t, i18n } = useTranslation();
     
     
 const container = {
@@ -72,16 +74,16 @@ useEffect(() => {
 
         <div className="nav-right">
           <button style={{color:"#095880"}}>
-            <img src="../document.svg" alt="" />Оформить E-polis
+            <img src="../document.svg" alt="" /> {t('getpolicy')}
           </button>
 
           <button style={{textDecoration:"underline"}}>
-            <img src="../Union.svg" alt="" />Такафул
+            <img src="../Union.svg" alt="" />{t('takaful')}
           </button>
 
-          <select className='custom-select' name="" id="" >
+          <select onChange={(e) => i18n.changeLanguage(e.target.value)} className='custom-select' name="" id="" >
              <option disabled selected hidden> 🌐 | RU</option>
-            <option value="ru">Русский 🇷🇺 </option>
+            <option value="ru">Русский </option>
             <option value="uz">O'zbek</option>
             <option value="en">English</option>
           </select>
@@ -90,7 +92,7 @@ useEffect(() => {
           </button> */}
 
           <button style={{padding:" 8px 12px"}} >
-            <img style={{width:"22px"}} src={dark ? '../call.png' : '../call.svg'} alt="" /> <p>1188</p> | <img style={{width:"22px"}} src={dark ? '../send.png' : '../send.svg'} alt="" /> Поддержка
+            <img style={{width:"22px"}} src={dark ? '../call.png' : '../call.svg'} alt="" /> <p>1188</p> | <img style={{width:"22px"}} src={dark ? '../send.png' : '../send.svg'} alt="" /> {t('support')}
           </button>
         </div>
       </nav>
@@ -99,10 +101,10 @@ useEffect(() => {
       <main>
         <div className="section1">
           <div className="section1-div">
-            <p data-aos="fade-down">Страхование ответственности</p>
-            <h1 data-aos="zoom-in">Оформите ОСГО ВТС онлайн</h1>
-            <p data-aos="fade-up">И получите ссылку на E-polis по смс</p>
-            <button className='btn' data-aos="fade-right" style={{fontSize:"18px"}}>Подробнее <img src="../right.svg" alt="" /></button>
+            <p data-aos="fade-down">{t('h1')}</p>
+            <h1 data-aos="zoom-in">{t('osgo')}</h1>
+            <p data-aos="fade-up">{t('sms')}</p>
+            <button className='btn' data-aos="fade-right" style={{fontSize:"18px"}}>{t("title")} <img src="../right.svg" alt="" /></button>
           </div>
             
         </div>
@@ -112,8 +114,8 @@ useEffect(() => {
         <div className="section2">
           <div className="section2-top">
               <div className="section2-top-left">
-                <h2>Рекомендуемые продукты</h2>
-                <p>Частным лицам</p> <button
+                <h2>{t('recomend')}</h2>
+                <p>{t('individual')}</p> <button
             className="toggle-container"
             style={{
                 ...container,
@@ -135,7 +137,7 @@ useEffect(() => {
               </div>
 
               <div className="seciton2-top-right" style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-                <p className='p' style={{fontSize:"18px", transition:"0.s linear"}}>Все продукты →</p>
+                <p className='p' style={{fontSize:"18px", transition:"0.s linear"}}>{t('allproducts')}</p>
               </div>
           </div>
 
@@ -157,7 +159,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsume dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr/>
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>Подробнее</button></div>
+              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
               </div>
             </div>
 
@@ -176,7 +178,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsum dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr />
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>Подробнее</button></div>
+              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
               </div>
             </div>
 
@@ -195,7 +197,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsum dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr />
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>Подробнее</button></div>
+              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
               </div>
             </div>
 
@@ -214,7 +216,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsum dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr />
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>Подробнее</button></div>
+              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
               </div>
             </div>
           </div>
