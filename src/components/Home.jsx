@@ -150,7 +150,7 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование туристов</h3>
+                  <h3>Страхование туристов</h3><br />
               <p className='card_first_p'>Личное страхование</p>
                 </div>
                 <div className="rright">
@@ -169,7 +169,7 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование туристов</h3>
+                  <h3>Страхование от несчастных случаев</h3><br />
               <p className='card_first_p'>Личное страхование</p>
                 </div>
                 <div className="rright">
@@ -188,7 +188,7 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование туристов</h3>
+                  <h3>Страхование на случай инфекционного заболевания</h3><br />
               <p className='card_first_p'>Личное страхование</p>
                 </div>
                 <div className="rright">
@@ -207,7 +207,7 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование туристов</h3>
+                  <h3>Страхование спортсменов</h3><br />
               <p className='card_first_p'>Личное страхование</p>
                 </div>
                 <div className="rright">
