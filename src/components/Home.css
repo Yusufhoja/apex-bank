@@ -20,7 +20,7 @@ nav{
   width: 1340px;
   height: 145px;
 }
-.nav-right button{
+.nav-right button, .nav-right select{
 height: 60px;
 max-width: 208px;
 padding-top: 18px;
@@ -327,20 +327,20 @@ vertical-align: middle;
 }
 
 /* Navdagi button hoverlari */
-.nav-right button {
+.nav-right button, .nav-right select {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-.nav-right button:hover {
+.nav-right button:hover, .nav-right select:hover {
   transform: translateY(-3px);
   box-shadow: 0px 8px 16px rgba(9, 88, 128, 0.3); /* yengil soyali effekt */
   background-color: #d4d9e3; /* hoverda rang o‘zgarishi */
   cursor: pointer;
 }
 
-.nav-right button::after {
+.nav-right button::after, .nav-right select::after {
   content: "";
   position: absolute;
   left: 0;
@@ -351,7 +351,7 @@ vertical-align: middle;
   transition: 0.4s ease;
 }
 
-.nav-right button:hover::after {
+.nav-right button:hover::after, .nav-right select:hover::after {
   width: 100%;
 }
 
@@ -364,7 +364,7 @@ body.dark .nav-right button:hover {
 body.dark .nav-right button::after {
   background-color: #fff;
 }
-.nav-right button:active {
+.nav-right button:active, .nav-right select:active {
   transform: translateY(0px) scale(0.98);
   box-shadow: none;
 }
@@ -737,7 +737,7 @@ body.dark footer {
   overflow: hidden;
 }
 
-.nav-right button:hover {
+.nav-right button:hover, .nav-right select:hover {
   transform: translateY(-3px);
   box-shadow: 0px 8px 16px rgba(9, 88, 128, 0.3);
   background-color: #d4d9e3;
@@ -745,7 +745,7 @@ body.dark footer {
   color: #095880;
 }
 
-.nav-right button::after {
+.nav-right button::after, .nav-right select::after {
   content: "";
   position: absolute;
   left: 0;
@@ -756,11 +756,11 @@ body.dark footer {
   transition: 0.4s ease;
 }
 
-.nav-right button:hover::after {
+.nav-right button:hover::after, .nav-right select::after {
   width: 100%;
 }
 
-.nav-right button:active {
+.nav-right button:active .nav-right select:ac {
   transform: translateY(0px) scale(0.98);
   box-shadow: none;
 }

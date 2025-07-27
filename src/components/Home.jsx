@@ -4,6 +4,7 @@ import { Link, Links } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
+import { Select, Option } from "@material-tailwind/react";
 export default function Home() {
     const[dark, setDark]=useState(false)
     const [isOn, setIsOn] = useState(false)
@@ -78,9 +79,15 @@ useEffect(() => {
             <img src="../Union.svg" alt="" />Такафул
           </button>
 
-          <button>
+          <select className='custom-select' name="" id="" >
+             <option disabled selected hidden> 🌐 | RU</option>
+            <option value="ru">Русский 🇷🇺 </option>
+            <option value="uz">O'zbek</option>
+            <option value="en">English</option>
+          </select>
+          {/* <button>
             <img style={{width:"25px"}} src={dark ? '../eyewhite.png' : '../eye.svg'} alt="" /> |  RU
-          </button>
+          </button> */}
 
           <button style={{padding:" 8px 12px"}} >
             <img style={{width:"22px"}} src={dark ? '../call.png' : '../call.svg'} alt="" /> <p>1188</p> | <img style={{width:"22px"}} src={dark ? '../send.png' : '../send.svg'} alt="" /> Поддержка
