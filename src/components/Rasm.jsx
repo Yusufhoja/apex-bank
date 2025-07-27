@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import './Swiper.css';
+import './Rasm.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
