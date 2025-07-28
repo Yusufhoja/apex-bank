@@ -62,7 +62,7 @@ useEffect(() => {
        <Link to={'/apps'}><div > <img src="../apps.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
        <Link to={'/search'}><div> <img src="../search.svg" alt="" /></div></Link>
-       <Link to={'/login'}> <div> <img src="../loginlogo.svg" alt="" /></div></Link>
+       <Link to={'/login'}> <div className='personal_accaunt'> <img src="../loginlogo.svg" alt="" /><p>Личный <br /> Кабинет</p></div></Link>
 
        
     </div>
@@ -84,7 +84,7 @@ useEffect(() => {
           </button>
 
           <select onChange={(e) => i18n.changeLanguage(e.target.value)} className='custom-select' name="" id="" >
-             <option disabled selected hidden> 🌐 | RU</option>
+             <option  disabled selected hidden> 🌐 | RU</option>
             <option value="ru">Русский </option>
             <option value="uz">O'zbek</option>
             <option value="en">English</option>
@@ -93,7 +93,12 @@ useEffect(() => {
             <img style={{width:"25px"}} src={dark ? '../eyewhite.png' : '../eye.svg'} alt="" /> |  RU
           </button> */}
 
-          <button style={{padding:" 8px 12px"}} >
+          <button  style={{
+            paddingRight: "8px 12px",
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+          }} >
             <img style={{width:"22px"}} src={dark ? '../call.png' : '../call.svg'} alt="" /> <p>1188</p> | <img style={{width:"22px"}} src={dark ? '../send.png' : '../send.svg'} alt="" /> {t('support')}
           </button>
         </div>

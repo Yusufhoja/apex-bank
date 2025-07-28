@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 .main-left{
   width: 152px;
   display: flex;
@@ -14,6 +17,8 @@
   margin-top: 22px;
 }
 nav{
+  position: relative;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,10 +43,10 @@ align-items: center;
 justify-content: space-around;
 }
 .nav-right select{
-  width: 110px;
+  width: 120px;
 }
 .nav-right{
-  width: 686px;
+  width:1006px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -388,6 +393,30 @@ body.dark .nav-right button::after {
   transform: rotate(3deg); /* OLDIN 5deg, endi yumshoqroq */
   transition: all 0.25s ease;
 }
+.main-left .personal_accaunt{
+   margin-top: 30px;
+   width: 110px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-left .personal_accaunt:hover{
+  width: 110px;
+  height: 60px;
+  color: white;
+}
+.blok{
+  display: none !important;
+}
+.main-left .personal_accaunt:hover ~ .blok {
+  display: block !important;
+}
+
+
+.main-left .personal_accaunt {
+  color: #095880;
+}
 body.dark .main-left div:hover {
   background-color: #1e90ff;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.15);
@@ -512,6 +541,7 @@ margin-top: 20px;
 }
 .main{
   position: relative;
+  z-index: 0;
   left: 150px;
 }
 
@@ -687,8 +717,10 @@ body.dark .section4-right {
 }
 body.dark .nav-right select,
 body.dark .nav-right option{
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: black;
 }
+
 /* ====== Footer Text & Links ====== */
 body.dark footer p,
 body.dark footer a {
@@ -955,8 +987,6 @@ body.dark .ddiv button:hover {
   box-shadow: 2px 9px 15px rgba(9, 88, 128, 0.3);
 }
 
-
-
 /* 1300px dan 1550px gacha ekranlar uchun */
 @media (min-width: 1200px) and (max-width: 1550px) {
   /* Umumiy bo‘limlar uchun */
@@ -972,7 +1002,7 @@ body.dark .ddiv button:hover {
   }
 
   .nav-right {
-    width: 50%;  /* Noutbuklar uchun kenglikni biroz qisqartirish */
+    width: 53%;  /* Noutbuklar uchun kenglikni biroz qisqartirish */
   }
 
   .section1 {

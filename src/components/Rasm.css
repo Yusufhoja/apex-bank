@@ -35,11 +35,6 @@
   opacity: 1;
   background-color: white;
 }
-
-.swiper-pagination{
-  background-color: white;
-  
-}
 body.dark .slide1 h1,
 body.dark .slide1 p{
   color: white;
