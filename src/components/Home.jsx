@@ -51,8 +51,8 @@ useEffect(() => {
   return (
     <div className='main-section'>
     <div className="main-left">
-       <div onClick={() => setDark(!dark)}><button style={{border:"none", background:"none"}} > <img src={ dark ? '../mood2.svg' : '../mode.svg'} alt="" /></button></div>
-       <Link to={'/'}><div style={{backgroundColor:"#E5E8EE", marginTop:"30px "}}> <img src="../home.svg" alt="" /></div></Link>
+       <div style={{marginTop:"38px"}} onClick={() => setDark(!dark)}><button style={{border:"none", background:"none"}} > <img src={ dark ? '../mood2.svg' : '../mode.svg'} alt="" /></button></div>
+       <Link to={'/'}><div style={{backgroundColor:"#E5E8EE", marginTop:"58px "}}> <img src="../home.svg" alt="" /></div></Link>
        <Link to={'/user'}><div > <img src="../user.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
        <Link to={'/work'}><div > <img src="../chemodan.svg" alt="" /></div></Link>
@@ -62,7 +62,7 @@ useEffect(() => {
        <Link to={'/apps'}><div > <img src="../apps.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
        <Link to={'/search'}><div> <img src="../search.svg" alt="" /></div></Link>
-       <Link to={'/login'}> <div className='personal_accaunt'> <img src="../loginlogo.svg" alt="" /><p>Личный <br /> Кабинет</p></div></Link>
+       <Link to={'/login'}> <div style={{marginRight:"20px"}} className='personal_accaunt'> <img src="../loginlogo.svg" alt="" /><p>Личный <br /> Кабинет</p></div></Link>
 
        
     </div>
