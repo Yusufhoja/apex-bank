@@ -51,18 +51,18 @@ useEffect(() => {
   return (
     <div className='main-section'>
     <div className="main-left">
-       <div style={{marginTop:"38px"}} onClick={() => setDark(!dark)}><button style={{border:"none", background:"none"}} > <img src={ dark ? '../mood2.svg' : '../mode.svg'} alt="" /></button></div>
-       <Link to={'/'}><div style={{backgroundColor:"#E5E8EE", marginTop:"58px "}}> <img src="../home.svg" alt="" /></div></Link>
-       <Link to={'/user'}><div > <img src="../user.svg" alt="" /></div></Link>
+       <div className='divs' style={{marginTop:"38px"}} onClick={() => setDark(!dark)}><button style={{border:"none", background:"none"}} > <img src={ dark ? '../mood2.svg' : '../mode.svg'} alt="" /></button></div>
+       <Link to={'/'}><div className='divs' style={{backgroundColor:"#E5E8EE", marginTop:"58px "}}> <img src="../home.svg" alt="" /></div></Link>
+       <Link to={'/user'}><div className='divs' > <img src="../user.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
-       <Link to={'/work'}><div > <img src="../chemodan.svg" alt="" /></div></Link>
+       <Link to={'/work'}><div className='divs' > <img src="../chemodan.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
-       <Link to={'/news'}><div > <img src="../feed.svg" alt="" /></div></Link>
+       <Link to={'/news'}><div className='divs' > <img src="../feed.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
-       <Link to={'/apps'}><div > <img src="../apps.svg" alt="" /></div></Link>
+       <Link to={'/apps'}><div className='divs' > <img src="../apps.svg" alt="" /></div></Link>
        <hr  style={{ width:"30px"}}/>
-       <Link to={'/search'}><div> <img src="../search.svg" alt="" /></div></Link>
-       <Link to={'/login'}> <div style={{marginRight:"20px"}} className='personal_accaunt'> <img src="../loginlogo.svg" alt="" /><p>Личный <br /> Кабинет</p></div></Link>
+       <Link to={'/search'}><div className='divs'> <img src="../search.svg" alt="" /></div></Link>
+       <Link to={'/login'}> <div style={{marginRight:"20px"}} className='personal_accaunt'> <img src="../loginlogo.svg" alt="" /><p className='kab'>Личный <br /> Кабинет</p><div className='blok'><div className="blok-top"><div className="blok-t-left"><img src="../dum.svg" alt="" /></div><div className="blok-t-right"><h3>Гость</h3><p>Гостевое лицо</p></div></div><div className="blok-button"><button>Вход и создание аккаунта</button></div></div></div></Link>
 
        
     </div>
@@ -236,7 +236,7 @@ useEffect(() => {
 <div className="section3" data-aos="fade-up">
   <div className="section3-left" data-aos="fade-right">
     <h2 data-aos="fade-down" data-aos-delay="100">{t('about')}</h2>
-    <div data-aos="zoom-in" data-aos-delay="200"></div>
+    <div data-aos="zoom-in" data-aos-delay="200"><iframe width="650" height="450" src="https://www.youtube.com/embed/AXD2KGN4O_Q?si=B71IT2RuURszwzQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
   </div>
 
   <div style={{marginLeft:"20px"}} className="section3-rihgt" data-aos="fade-left">
