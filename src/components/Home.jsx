@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 import { Select, Option } from "@material-tailwind/react";
+import Rasm from './Rasm';
 export default function Home() {
     const[dark, setDark]=useState(false)
     const [isOn, setIsOn] = useState(false)
@@ -68,6 +69,7 @@ useEffect(() => {
 
     <div className="main">
       <nav  data-aos="fade-right">
+        
         <div className="nav-left">
           <img src="../logo.svg" alt="" />
         </div>
@@ -99,7 +101,7 @@ useEffect(() => {
 
 
       <main>
-        <div className="section1">
+        {/* <div className="section1">
           <div className="section1-div">
             <p data-aos="fade-down">{t('h1')}</p>
             <h1 data-aos="zoom-in">{t('osgo')}</h1>
@@ -107,9 +109,9 @@ useEffect(() => {
             <button className='btn' data-aos="fade-right" style={{fontSize:"18px"}}>{t("title")} <img src="../right.svg" alt="" /></button>
           </div>
             
-        </div>
+        </div> */}
 
-
+<Rasm></Rasm>
 
         <div className="section2">
           <div className="section2-top">
