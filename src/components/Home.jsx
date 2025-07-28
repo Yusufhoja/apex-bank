@@ -152,8 +152,8 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование туристов</h3><br />
-              <p className='card_first_p'>Личное страхование</p>
+                  <h3>{t('straxovka1')}</h3><br />
+              <p className='card_first_p'>{t('sugurta')}</p>
                 </div>
                 <div className="rright">
                   <img style={{width:"20px", height:"20px"}} src="../kema.svg" alt="" />
@@ -161,7 +161,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsume dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr/>
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
+              <div className='p_and_button'><p className='card_third_p'>{t('polis')}</p> <button>{t("title")}</button></div>
               </div>
             </div>
 
@@ -171,8 +171,8 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование от несчастных случаев</h3><br />
-              <p className='card_first_p'>Личное страхование</p>
+                  <h3>{t('straxovka2')}</h3><br />
+              <p className='card_first_p'>{t('sugurta')}</p>
                 </div>
                 <div className="rright">
                   <img style={{width:"20px", height:"20px"}} src="../verible.svg" alt="" />
@@ -180,7 +180,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsum dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr />
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
+              <div className='p_and_button'><p className='card_third_p'>{t('polis')}</p> <button>{t("title")}</button></div>
               </div>
             </div>
 
@@ -190,8 +190,8 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование на случай инфекционного заболевания</h3><br />
-              <p className='card_first_p'>Личное страхование</p>
+                  <h3>{t('straxovka3')}</h3><br />
+              <p className='card_first_p'>{t('sugurta')}</p>
                 </div>
                 <div className="rright">
                   <img style={{width:"20px", height:"20px"}} src="../kema.svg" alt="" />
@@ -199,7 +199,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsum dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr />
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
+              <div className='p_and_button'><p className='card_third_p'>{t('polis')}</p> <button>{t("title")}</button></div>
               </div>
             </div>
 
@@ -209,8 +209,8 @@ useEffect(() => {
               <div className="card-bottom">
               <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <div className="lleft">
-                  <h3>Страхование спортсменов</h3><br />
-              <p className='card_first_p'>Личное страхование</p>
+                  <h3>{t('straxovka4')}</h3><br />
+              <p className='card_first_p'>{t('sugurta')}</p>
                 </div>
                 <div className="rright">
                   <img style={{width:"20px", height:"20px"}} src="../kema.svg" alt="" />
@@ -218,7 +218,7 @@ useEffect(() => {
               </div>
               <p className='card_second_p'>Lorem ipsum dolor sit amet consectetur. Tortor ipsum sed natoque sed elit ut eget vitae.</p>
               <hr />
-              <div className='p_and_button'><p className='card_third_p'>Оформить полис</p> <button>{t("title")}</button></div>
+              <div className='p_and_button'><p className='card_third_p'>{t('polis')}</p> <button>{t("title")}</button></div>
               </div>
             </div>
           </div>
@@ -228,34 +228,34 @@ useEffect(() => {
 
 <div className="section3" data-aos="fade-up">
   <div className="section3-left" data-aos="fade-right">
-    <h2 data-aos="fade-down" data-aos-delay="100">О компании APEX INSURANCE</h2>
+    <h2 data-aos="fade-down" data-aos-delay="100">{t('about')}</h2>
     <div data-aos="zoom-in" data-aos-delay="200"></div>
   </div>
 
   <div style={{marginLeft:"20px"}} className="section3-rihgt" data-aos="fade-left">
-    <h2 data-aos="fade-down" data-aos-delay="100">Наши преимущества</h2>
+    <h2 data-aos="fade-down" data-aos-delay="100">{t('prium')}</h2>
     
     <div className='section3-right-maindiv'>
       <div className="section3-right-leftdivs">
         <div style={{borderRadius:"20px"}} className="section3-right-1div" data-aos="flip-left" data-aos-delay="200">
-          <p style={{fontSize:"20px"}}>Качество и <br /> надёжность</p>
+          <p style={{fontSize:"20px"}}>{t('effect')}</p>
           <img style={{marginTop:"70px", marginLeft:"100px"}} src="../number.svg" alt="" />
         </div>
 
         <div style={{fontSize:"20px"}} className="section3-right-2div" data-aos="flip-left" data-aos-delay="300">
-          <p>Ответственность за ваше будущее</p>
+          <p>{t('masuliat')}</p>
         </div>
       </div>
 
       <div className="section3-right-rightdivs">
         <div data-aos="zoom-in-up" data-aos-delay="400">
-          <b>72+</b> <p>Страховых продуктов для частных лиц и компаний</p>
+          <b>72+</b> <p>{t('strproduct')}</p>
         </div>
         <div data-aos="zoom-in-up" data-aos-delay="500">
-          <b>52+</b> <p>Региональных филиалов</p>
+          <b>52+</b> <p>{t('filial')}</p>
         </div>
         <div data-aos="zoom-in-up" data-aos-delay="600">
-          <b>uzA++</b> <p>Исключительно высокий уровень надёжности</p>
+          <b>uzA++</b> <p>{t('safety')}</p>
         </div>
       </div>
     </div>
