@@ -93,12 +93,14 @@ useEffect(() => {
             <img style={{width:"25px"}} src={dark ? '../eyewhite.png' : '../eye.svg'} alt="" /> |  RU
           </button> */}
 
-          <button  style={{
-            paddingRight: "8px 12px",
-    display: "flex",
-    alignItems: "center",
-    gap: "8px",
-          }} >
+          <button 
+            style={{
+    padding: '8px 12px', // To'g'ri padding sintaksisi
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+  }}
+          >
             <img style={{width:"22px"}} src={dark ? '../call.png' : '../call.svg'} alt="" /> <p>1188</p> | <img style={{width:"22px"}} src={dark ? '../send.png' : '../send.svg'} alt="" /> {t('support')}
           </button>
         </div>

@@ -27,7 +27,7 @@ nav{
 }
 .nav-right button, .nav-right select{
 height: 60px;
-max-width: 208px;
+max-width: 228px;
 padding-top: 18px;
 padding-right: 20px;
 padding-bottom: 18px;
@@ -719,6 +719,7 @@ body.dark .nav-right select,
 body.dark .nav-right option{
   background-color: rgba(255, 255, 255, 0.05) !important;
   color: black;
+
 }
 
 /* ====== Footer Text & Links ====== */
