@@ -270,16 +270,16 @@ useEffect(() => {
     data-aos="fade-down" 
     data-aos-delay="100" 
     style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-    <h3>Новости</h3>
-    <p className='p'>Все новости →</p>
+    <h3>{t('news')}</h3>
+    <p className='p'>{t('allnews')} →</p>
   </div>
 
   <div className="section4-main">
     {/* Chap taraf */}
     <div className="section4-left" data-aos="fade-right" data-aos-delay="200">
-      <p className='section4-1p'>САМАЯ СВЕЖАЯ #1</p>
+      <p className='section4-1p'>{t('freshnews')}  #1</p>
       <p className='section4-2p'>
-        APEX INSURANCE поддерживает сборную Узбекистана по дзюдо на Олимпийских играх в Париже
+        {t('news1')}
       </p>
       <img style={{ marginTop: "20px" }} src="../command.svg" alt="" data-aos="zoom-in" data-aos-delay="300" />
     </div>
@@ -294,24 +294,19 @@ useEffect(() => {
       <img src="../apex.svg" alt="" data-aos="zoom-in" data-aos-delay="400" />
       
       <p style={{ marginTop: "20px" }} className='section4-1p' data-aos="fade-up" data-aos-delay="500">
-        САМАЯ СВЕЖАЯ #2
+        {t('freshnews')} #2
       </p>
 
-      <p className='section4-2p' data-aos="fade-up" data-aos-delay="600">
-        Лидирующие страховые компании по объему собранных страховых премий за I квартал 2024 года
-      </p>
+      <p className='section4-2p' data-aos="fade-up" data-aos-delay="600">{t('year')}  </p>
 
       <p className='section4-3p' data-aos="fade-up" data-aos-delay="700">
-        Лидирующие страховые компании по объему собранных страховых премий за I квартал 2024 года.
+        {t('year')}
         <br /><br />
-        По данным Национального агентства перспективных проектов Республики Узбекистан, 
-        по итогам I квартала 2024 года APEX INSURANCE снова стал лидером отечественного страхового рынка 
-        по совокупному объему собранных страховых премий. 
+       {t('uzuntext')}
         <br /><br /><br />
-        Сборы APEX INSURANCE составили 903,5 млрд сум (рост на 225,9%), 
-        выплаты - 216,0 млрд сум (рост на 302,5%). 
+        {t('uzuntext2')}
         <br /><br />
-        Подробнее: https://napp.uz/uz/pages/statistics-and-analysis-for-im
+       {t('uzuntext3')}
       </p>
 
       <div 
@@ -320,7 +315,7 @@ useEffect(() => {
         data-aos-delay="800" 
         style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <b> – 16pt +</b> 
-        <button style={{color: dark ? 'white' : 'black'}}>Свернуть</button>
+        <button style={{color: dark ? 'white' : 'black'}}>{t('svernut')}</button>
       </div>
     </div>
   </div>
@@ -350,37 +345,34 @@ useEffect(() => {
 
   <div className="footer-middle" data-aos="fade-up" data-aos-delay="300" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%", borderBottom: "1px solid gray", marginTop: "25px", paddingBottom: "20px" }}>
     <div className="footer-m-1" data-aos="fade-up" data-aos-delay="400" style={{ display: "flex", flexDirection: "column", justifyContent: "space-around", width: "200px" }}>
-      <a href="">Частным лицам</a>
-      <a href="">Бизнесу</a>
-      <a href="">О компании</a>
-      <a href="">Контакты</a>
+      <a href="">{t('individual')}</a>
+      <a href="">{t('business')}</a>
+      <a href="">{t('about2')}</a>
+      <a href="">{t('contact')}</a>
     </div>
     <div className="footer-m-2" data-aos="fade-up" data-aos-delay="500" style={{ display: "flex", flexDirection: "column", justifyContent: "space-around", width: "200px" }}>
-      <a href="">Личное страхование</a>
-      <a href="">Страхование ответственности</a>
-      <a href="">Страхование имущества</a>
-      <a href="">Автострахование</a>
+      <a href="">{t('sugurta')}</a>
+      <a href="">{t('h1')}</a>
+      <a href="">{t('imushestvo')}</a>
+      <a href="">{t('avtosave')}</a>
     </div>
     <div className="footer-m-3" data-aos="fade-up" data-aos-delay="600" style={{ display: "flex", flexDirection: "column", justifyContent: "space-around", width: "300px" }}>
-      <a href="">Единый портал корпоративной информации</a>
-      <a href="">Правительственный портал</a>
-      <a href="">Агентство по развитию страхового рынка</a>
+      <a href="">{t('portal')}</a>
+      <a href="">{t('portal2')}</a>
+      <a href="">{t('agentstvo')}</a>
     </div>
     <div className="footer-m-4" data-aos="fade-up" data-aos-delay="700" style={{ display: "flex", flexDirection: "column", justifyContent: "space-around", width: "200px" }}>
-      <a href="">Круглосуточная связь:</a>
+      <a href="">{t('connection')}</a>
       <a href="">+998 (71) 203 08 08</a>
       <a href="">1188</a>
-      <a href="">Обратная связь</a>
+      <a href="">{t('backconnect')}</a>
     </div>
   </div>
 
   {/* <hr data-aos="fade-up" data-aos-delay="800" style={{ width: "100%", marginTop: "20px", borderColor: "#cccccc" }} /> */}
 
   <div className="footer-bottom" data-aos="fade-up" data-aos-delay="900" style={{ paddingTop: "20px" }}>
-    <p>
-      При использовании материалов сайта ссылка на веб‑сайт apexinsurance.uz обязательна. 
-      Лицензия Агентства по развитию страхового рынка при Министерстве финансов Республики Узбекистан серии СФ № 00030 от 18.02.2022 года.
-    </p>
+    <p>{t('uzuntext4')}</p>
   </div>
 </footer>
 
